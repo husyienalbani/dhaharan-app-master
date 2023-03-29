@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Admin</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/Admin style.css" rel="stylesheet" />
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+
+
+
+
+    <!-- =======================================================
+  * Template Name: iactivity - v3.10.0
+  * Template URL: https://bootstrapmade.com/iactivity-bootstrap-activity-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img
+            src="assets/img/admin.png"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light"><a href="index.html"><b>Habib Husyien</b></a></h1>
+          <hr style="color: white" />
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li>
+              <a href="#home" class="nav-link scrollto active"
+                ><i class="bx bx-home"></i> <span>home</span></a
+              >
+            </li>
+            <li>
+              <a href="#user" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>Admin</span></a
+              >
+            </li>
+            <li>
+              <a href="#activity" class="nav-link scrollto"
+                ><i class="bx bx-book-content"></i> <span>activity</span></a
+              >
+            </li>
+            <li>
+              <a href="#map" class="nav-link scrollto"
+                ><i class="bx bx-map-alt"></i> <span>map</span></a
+              >
+            </li>
+            <li>
+              <a href="#finance" class="nav-link scrollto"
+                ><i class="bx bx-money-withdraw"></i> <span>finance</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= home Section ======= -->
+    <section
+      id="home"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="home-container" data-aos="fade-in">
+        <h1>Dhaharan.id</h1>
+        <p>
+          Hallo
+          <span class="typed" data-typed-items="Admin Dhaharan"></span>
+        </p>
+      </div>
+    </section>
+    <!-- End home -->
+
+    <main id="main">
+      <!-- ======= user Section ======= -->
+      <section id="user" class="user">
+        <div class="container">
+          <div class="section-title">
+            <h2>Administrator</h2>
+            <div class="card" style="margin-top: 30px">
+              <div class="card-header">
+                <i class="bx bx-user"></i> <b>Admin</b>
+              </div>
+              <div class="card-body">
+                <nav class="navbar navbar-light bg-light">
+                  <div class="container-fluid">
+                    <div class="input-group" style="margin-bottom: 10px;">
+                      <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                      data-bs-target="#tambahadmin"><i class="bx bx-user-plus" style="font-size: 25px;"></i></button>
+                      <input type="text" class="form-control" placeholder="Cari nama pengguna" aria-label="Recipient's username with two button addons">
+                      <button class="btn btn-outline-secondary" type="button"><i class="bx bx-search" style="font-size: 25px;"></i></button>
+                    </div>
+                </nav>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Habib Husyien ALbani</td>
+                        <td>husyienalbani@gmail.com</td>
+                        <td><div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-info btn-sm" type="button"><i class='bx bx-edit'></i></button>
+                          <button class="btn btn-danger btn-sm" type="button"><i class='bx bx-trash'></i></button>
+                        </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <nav aria-label="Page navigation example"style="margin-top: 10px;">
+                  <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="card" style="margin-top: 30px">
+              <div class="card-header">
+                <i class="bx bx-user"></i> <b>Users</b>
+              </div>
+              <div class="card-body">
+                <nav class="navbar navbar-light bg-light">
+                  <div class="container-fluid">
+                    <div class="input-group" style="margin-bottom: 10px;">
+                      <button class="btn btn-outline-success" type="button"><i class="bx bx-user-plus" style="font-size: 25px;"></i></button>
+                      <input type="text" class="form-control" placeholder="Cari nama pengguna" aria-label="Recipient's username with two button addons">
+                      <button class="btn btn-outline-secondary" type="button"><i class="bx bx-search" style="font-size: 25px;"></i></button>
+                    </div>
+                </nav>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Habib Husyien ALbani</td>
+                        <td>husyienalbani@gmail.com</td>
+                        <td><div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-info btn-sm" type="button"><i class='bx bx-edit'></i></button>
+                          <button class="btn btn-danger btn-sm" type="button"><i class='bx bx-trash'></i></button>
+                        </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <nav aria-label="Page navigation example" style="margin-top: 10px;">
+                  <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- ======= Modal Users======= -->
+            <div class="modal fade" id="tambahadmin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">Tambah Admin</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="col-md-12">
+                                            <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                                              <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                                                <div class="row">
+                                                  <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                                    <div class="mb-3">
+                                                      <label for="Inputname"
+                                                        class="form-label"><b>Name</b></label>
+                                                        <input type="email" class="form-control" id="inputname">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                                    <div class="mb-3">
+                                                      <label for="Inputemail" class="form-label"><b>Email</b></label>
+                                                          <input type="email" class="form-control" id="inputemail">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                                              <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                                                <div class="row">
+                                                  <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                                    <div class="mb-3">
+                                                      <label for="Inputpassword"
+                                                        class="form-label"><b>Password</b></label>
+                                                        <input type="email" class="form-control" id="inputpasword">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                                    <div class="mb-3">
+                                                      <label for="Inputpasswordkonfirmasi" class="form-label"><b>Password Confirmation</b></label>
+                                                          <input type="email" class="form-control" id="inputpaswordconfirmation" >
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary btn-sm">Save</button>
+                                          <button type="button" class="btn btn-warning btn-sm">Riset</button>
+                                        </div>
+                                      </div>
+                                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End user Section -->
+
+      <!-- ======= activity Section ======= -->
+      <section id="activity" class="activity section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>activity</h2>
+            <div class="card" style="margin-top: 30px">
+              <div class="card-header">
+                <i class="bx bx-map-alt"></i> <b>activity Aksi Sosial</b>
+              </div>
+              <div class="card-body">
+                <nav class="navbar navbar-light bg-light">
+                  <div class="container-fluid">
+                    <div class="input-group" style="margin-bottom: 10px;">
+                      <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                      data-bs-target="#tambahactivityaksisosial"><i class="bx bxs-calendar-event" style="font-size: 25px;"></i></button>
+                      <input type="text" class="form-control" placeholder="Cari activity" aria-label="Recipient's username with two button addons">
+                      <button class="btn btn-outline-secondary" type="button"><i class="bx bx-search" style="font-size: 25px;"></i></button>
+                    </div>
+                </nav>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama activity</th>
+                        <th scope="col">Jenis activity</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Pengeluran</th>
+                        <th scope="col">Keterangan</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Panti Asuhan A</td>
+                        <td>Sosial</td>
+                        <td>Yogyakarta</td>
+                        <td>12/03/2023</td>
+                        <td>15.000.000</td>
+                        <td>balkalbalalala</td>
+                        <td><div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-info btn-sm" type="button"><i class='bx bx-edit'></i></button>
+                          <button class="btn btn-danger btn-sm" type="button"><i class='bx bx-trash'></i></button>
+                        </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <nav aria-label="Page navigation example"style="margin-top: 10px;">
+                  <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+           <!-- ======= Modal Add activity======= -->
+                <div class="modal fade" id="tambahactivityaksisosial" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content" style="max-height: 80%;">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Tambah activity Aksi Sosial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputnamaactivity"
+                                      class="form-label"><b>Nama activity</b></label>
+                                      <input type="text" class="form-control" id="inputname">
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputjenisactivity" class="form-label"><b>Jenis activity</b></label>
+                                    <select class="form-select" id="inputjenisactivity"
+                                    style="font-size: small;">
+                                    <option selected>Jenis activity</option>
+                                    <option value="1"> Sosial</option>
+                                    <option value="2"> Edukasi</option>
+                                    <option value="3"> Tutorial</option>
+                                  </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputalamat"
+                                      class="form-label"><b>Alamat</b></label>
+                                      <input type="text" class="form-control" id="inputalamat">
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputtanggal" class="form-label"><b>Tanggal</b></label>
+                                        <input type="text" class="form-control" id="inputtanggal" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-12 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputpengeluaran"
+                                      class="form-label"><b>Pengeluaran</b></label>
+                                      <input type="text" class="form-control" id="pengeluaran">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-12 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputdeskripsi"
+                                    class="form-label"><b>Deskripsi</b></label>
+                                    <div id="editor">
+                                      <p>Tuliskan informasi lain di sini</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-12 col-12" style="margin-bottom: 5px;">
+                                  <div class="input-group-sm mb-3">
+                                    <label for="Inputgambaractivity"
+                                    class="form-label"><b>Gambar activity</b></label>
+                                    <input type="file" class="form-control" id="inputGroupFile01">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm">Save</button>
+                        <button type="button" class="btn btn-warning btn-sm">Riset</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End activity Section -->
+
+      <!-- ======= map Section ======= -->
+      <section id="map" class="map">
+        <div class="container">
+          <div class="section-title">
+            <h2>map</h2>
+            <div class="card" style="margin-top: 30px">
+              <div class="card-header">
+                <i class="bx bx-map-alt"></i> <b>Kategori map</b>
+              </div>
+              <div class="card-body">
+                <nav class="navbar navbar-light bg-light">
+                  <div class="container-fluid">
+                    <div class="input-group" style="margin-bottom: 10px;">
+                      <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                      data-bs-target="#tambahkategorimap"><i class="bx bx-user-plus" style="font-size: 25px;"></i></button>
+                      <input type="text" class="form-control" placeholder="Cari nama kategori" aria-label="Recipient's username with two button addons">
+                      <button class="btn btn-outline-secondary" type="button"><i class="bx bx-search" style="font-size: 25px;"></i></button>
+                    </div>
+                </nav>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kategori map</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Panti Asuhan</td>
+                        <td><div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-info btn-sm" type="button"><i class='bx bx-edit'></i></button>
+                          <button class="btn btn-danger btn-sm" type="button"><i class='bx bx-trash'></i></button>
+                        </div></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>PMKS</td>
+                        <td><div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-info btn-sm" type="button"><i class='bx bx-edit'></i></button>
+                          <button class="btn btn-danger btn-sm" type="button"><i class='bx bx-trash'></i></button>
+                        </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <nav aria-label="Page navigation example"style="margin-top: 10px;">
+                  <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+           <!-- ======= Modal Add kategori======= -->
+                <div class="modal fade" id="tambahkategorimap" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Tambah Kategori map</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-12 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputkategorimap"
+                                      class="form-label"><b>Nama Kategori</b></label>
+                                      <input type="email" class="form-control" id="inputkategorimap">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>   
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm">Save</button>
+                        <button type="button" class="btn btn-warning btn-sm">Riset</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top: 30px">
+              <div class="card-header">
+                <i class="bx bx-map-alt"></i> <b>Lokasi Aksi Sosial</b>
+              </div>
+              <div class="card-body">
+                <nav class="navbar navbar-light bg-light">
+                  <div class="container-fluid">
+                    <div class="input-group" style="margin-bottom: 10px;">
+                      <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                      data-bs-target="#tambahlokasiaksisosial"><i class="bx bxs-edit-location" style="font-size: 25px;"></i></button>
+                      <input type="text" class="form-control" placeholder="Cari lokasi" aria-label="Recipient's username with two button addons">
+                      <button class="btn btn-outline-secondary" type="button"><i class="bx bx-search" style="font-size: 25px;"></i></button>
+                    </div>
+                </nav>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Lokasi</th>
+                        <th scope="col">Kategori</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Panti Asuhan A</td>
+                        <td>Panti Asuhan</td>
+                        <td><div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-info btn-sm" type="button"><i class='bx bx-edit'></i></button>
+                          <button class="btn btn-danger btn-sm" type="button"><i class='bx bx-trash'></i></button>
+                        </div></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Rumah Bu Yeni</td>
+                        <td>PMKS</td>
+                        <td><div class="d-grid gap-2 d-md-block">
+                          <button class="btn btn-info btn-sm" type="button"><i class='bx bx-edit'></i></button>
+                          <button class="btn btn-danger btn-sm" type="button"><i class='bx bx-trash'></i></button>
+                        </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <nav aria-label="Page navigation example"style="margin-top: 10px;">
+                  <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+           <!-- ======= Modal Add lokasi======= -->
+                <div class="modal fade" id="tambahlokasiaksisosial" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Tambah Lokasi Aksi Sosial</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputname"
+                                      class="form-label"><b>Name</b></label>
+                                      <input type="email" class="form-control" id="inputname">
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputemail" class="form-label"><b>Email</b></label>
+                                        <input type="email" class="form-control" id="inputemail">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="tab-content" id="nav-tabContent" style="font-size: small;">
+                            <div class="tab-pane fade active show" id="nav-locationtours" role="tab">
+                              <div class="row">
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputpassword"
+                                      class="form-label"><b>Password</b></label>
+                                      <input type="email" class="form-control" id="inputpasword">
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-12" style="margin-bottom: 5px;">
+                                  <div class="mb-3">
+                                    <label for="Inputpasswordkonfirmasi" class="form-label"><b>Password Confirmation</b></label>
+                                        <input type="email" class="form-control" id="inputpaswordconfirmation" >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm">Save</button>
+                        <button type="button" class="btn btn-warning btn-sm">Riset</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End map Section -->
+
+      <!-- ======= finance Section ======= -->
+      <section id="finance" class="finance section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>finance</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End finance Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dhaharan.id</span></strong>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://Dhaharan.id/">Dhaharan.id</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/quill.js"></script>
+
+
+  </body>
+</html>
