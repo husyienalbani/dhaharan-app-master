@@ -11,7 +11,7 @@
         <form action="" method="get" style="width: 100%">
           <div class="input-group" style="margin-bottom: 10px;">
             <a class="btn btn-outline-success" href="{{ route('categories.create') }}" role="button"><i
-                class="zmdi zmdi-plus zmdi-hc-2x"></i> <i class="zmdi zmdi-money-box zmdi-hc-2x"></i></a>
+                class="zmdi zmdi-plus zmdi-hc-2x"></i> <i class="zmdi zmdi-map zmdi-hc-2x"></i></a>
             <input type="text" class="form-control" name="pencarian" placeholder="Cari Kategori">
             <button class="btn btn-outline-success"><i class="zmdi zmdi-search zmdi-hc-2x"></i></button>
           </div>

@@ -72,7 +72,7 @@
                     <a href="/map" class="nav-link scrollto"><i class="bx bx-map-alt"></i> <span>Maps</span></a>
                 </li>
                 <li>
-                    <a href="./login" class="nav-link scrollto"><i class="bx bx-user-circle"></i> <span>Login</span></a>
+                    <a href="/login" class="nav-link scrollto"><i class="bx bx-user-circle"></i> <span>Login</span></a>
                 </li>
             </ul>
         </nav>

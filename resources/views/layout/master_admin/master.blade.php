@@ -47,12 +47,24 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="IndexAdministator.html">
-                        <i class="zmdi zmdi-account-box"></i> <span>Admin</span>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#dropdownadmin" aria-expanded="false"
+                        aria-controls="ui-basic">
+                        <i class="zmdi zmdi-account-box"></i></span>
+                        <span class="menu-title">Administrator</span>
+                        <i class="zmdi zmdi-chevron-down" style="float:right; margin-right:10px"></i>
                     </a>
+                    <div class="collapse" id="dropdownadmin">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admins">Admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/users">Member</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-
                 <li>
                     <a href="/activities">
                         <i class="zmdi zmdi-view-web"></i> <span>Activity</span>

@@ -72,7 +72,8 @@
                                                 <input type="date"
                                                     class="form-control @error('expense_date') is-invalid @enderror"
                                                     name="expense_date" value="{{ old('expense_date') }}""
-                                                    placeholder=" Masukkan Tanggal Donasi" style="font-size: small">
+                                                    placeholder=" Masukkan Tanggal Pengeluaran"
+                                                    style="font-size: small">
                                                 @error('expense_date')
                                                 <div class="alert alert-danger mt-2 text-center">
                                                     {{ $message }}

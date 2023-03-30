@@ -25,6 +25,13 @@ Route::get('/dasboard', function () {
     return view('layout/frontend_admin/index');
 });
 
+Route::get('/login', function () {
+    return view('layout/auth/login');
+});
+Route::get('/register', function () {
+    return view('layout/auth/register');
+});
+
 
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index']);
 Route::resource('/activities', \App\Http\Controllers\ActivityController::class);
