@@ -14,6 +14,7 @@ class IndexController extends Controller
     /**
      * Display a listing of the resource.
      */
+
     public function index()
     {
         $posts = FinanceDonation::latest()->paginate(5);

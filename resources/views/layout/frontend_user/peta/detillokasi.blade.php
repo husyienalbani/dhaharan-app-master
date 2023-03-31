@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Activity Details</title>
+  <title>Location Details</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
@@ -81,7 +81,7 @@
           </div>
           <div class="col-lg-4">
             <div class="activity-info" style="background-color: #9db7b3">
-              <h3>Informasi Kegitan</h3>
+              <h3>Informasi Lokasi</h3>
               <ul>
                 <li><strong>Nama Lokasi</strong>: {{ $places->name }}</li>
                 <li><strong>Kategori Kegiatan</strong>: {{ $places->categoryPlace->name }}</li>
@@ -101,7 +101,7 @@
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="activity-description" style="text-align: justify; margin: 20px">
-              <h2>Detail Kegiatan</h2>
+              <h2>Detail Lokasi</h2>
               <p>
                 {!! $places->PlaceInfo !!}
               </p>

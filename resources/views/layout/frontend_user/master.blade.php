@@ -29,10 +29,9 @@
     <!-- Template Main CSS File -->
     <link href="{{ asset('/assets/user/css/style.css') }}" rel="stylesheet" />
 
-    <!-- Datatables CSS-->
-    <link href="{{ asset('/assets/user/css/datatables.bootstrap5.min.css') }}" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
 
     <!-- =======================================================
   * Template Name: Mymap - v4.10.0
@@ -556,11 +555,7 @@
     <!-- Template Main JS File -->
     <script src="{{ asset('/assets/user/js/main.js') }}"></script>
 
-    <!-- datatables js-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
-    <script src="{{ asset('/assets/user/js/datatables.js') }}"></script>
+    {{-- <script src="{{ asset('/assets/user/js/datatables.js') }}"></script> --}}
 </body>
 
 </html>
