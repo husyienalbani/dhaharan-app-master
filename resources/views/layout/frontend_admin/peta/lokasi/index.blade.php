@@ -28,6 +28,7 @@
             <th scope="col">No</th>
             <th scope="col">Nama Lokasi</th>
             <th scope="col">Kategori</th>
+            <th scope="col">Pembuat</th>
             <th scope="col">Cover</th>
             <th scope="col">Action</th>
           </tr>
@@ -37,10 +38,12 @@
           $i = $posts->firstItem();
           ?>
           @forelse ($posts as $post)
+          @if(Auth::check() && Auth::user()->role === '1')
           <tr>
             <td>{{ $i++ }}</td>
             <td>{{ $post->name }}</td>
             <td>{{ $post->categoryPlace->name}}</td>
+            <td>{{ $post->user->name}}</td>
             <td class="text-center">
               <img src="coverplace/{{$post->cover }}" class="rounded" style="width: 100px">
             </td>
@@ -57,15 +60,49 @@
                   <button type="submit" class="btn btn-danger btn-sm"><i
                       class="zmdi zmdi-delete zmdi-hc-2x"></i></button>
                 </form>
+                @if($post->is_approved == 0)
+                <form action="{{ route('places.approve', $post->id) }}" method="POST">
+                  @csrf
+                  <button class="btn btn-success btn-sm" type="submit" style="margin-top: 10px">
+                    APPROVE</button>
+                </form>
+                @endif
               </div>
             </td>
           </tr>
+          @else
+          @if(Auth::user()->role === '2' && $post->is_approved == 1)
+          <tr>
+            <td>{{ $i++ }}</td>
+            <td>{{ $post->name }}</td>
+            <td>{{ $post->categoryPlace->name}}</td>
+            <td>{{ $post->user->name}}</td>
+            <td class="text-center">
+              <img src="coverplace/{{$post->cover }}" class="rounded" style="width: 100px">
+            </td>
+            <td>
+              <div class="d-grid gap-2 d-md-block text-center">
+                <form onsubmit="return confirm('Apakah Anda Yakin ?');"
+                  action="{{ route('places.destroy', $post->id) }}" method="POST">
+                  <a href="{{ route('places.show', $post->id) }}" class="btn btn-warning btn-sm"><i
+                      class="zmdi zmdi-eye zmdi-hc-2x"></i></a>
+                </form>
+              </div>
+            </td>
+          </tr>
+          @endif
+          @endif
           @empty
-          <div class="alert alert-danger text-center" style="font-size: small">
-            Data belum Tersedia.
-          </div>
+          <tr>
+            <td colspan="5">
+              <div class="alert alert-danger text-center" style="font-size: small">
+                Data belum Tersedia.
+              </div>
+            </td>
+          </tr>
           @endforelse
         </tbody>
+
       </table>
     </div>
     {{$posts->links()}}

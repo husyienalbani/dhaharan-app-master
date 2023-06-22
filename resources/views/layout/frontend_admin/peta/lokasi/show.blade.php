@@ -81,7 +81,7 @@
                         <li class="list-group-item"
                             style="font-size: small;background-color: rgba(255, 255, 255, 0.257);">
                             {{ $post->location}}</li>
-                        <p class="card-text" style="margin-top: 10px;"> <b>Deskripsi</b></p>
+                        <p class="card-text" style="margin-top: 10px;"> <b>Detail Informasi</b></p>
                         <li class="list-group-item"
                             style="font-size: small;background-color: rgba(255, 255, 255, 0.257); margin-bottom:20px;">
                             {!!$post->PlaceInfo !!}</li>

@@ -84,10 +84,6 @@
                     <a href="#peta" class="nav-link scrollto"><i class="bx bx-map-alt"></i> <span>Maps</span></a>
                 </li>
                 <li>
-                    <a href="/dasboard" class="nav-link scrollto"><i class='bx bxs-dashboard'></i>
-                        <span>Dasboard</span></a>
-                </li>
-                <li>
                     <a href="/" class="nav-link scrollto"><i class='bx bx-log-out'></i></i>
                         <span>Back</span></a>
                 </li>
@@ -260,6 +256,7 @@
         L.control.search({ position: 'topleft' }).addTo(map);
 
         @foreach ($places as $item)
+        @if($item->is_approved == 1)
             L.marker([{{ $item->location }}]
                 )
                 .bindPopup(
@@ -268,7 +265,9 @@
                     "<div class='my-2'><a href='{{ route('cek-rute', $item->id) }}' class='btn btn-outline-primary btn-sm'>Lihat Rute</a> <a href='{{ route('detail_lokasi', $item->id) }}' class='btn btn-outline-info btn-sm'>Detail Lokasi</a></div>" +
                     "<div class='my-2'></div>"
                 ).addTo(map);
-            @endforeach
+        @endif
+        @endforeach
+
 </script>
 
 </html>

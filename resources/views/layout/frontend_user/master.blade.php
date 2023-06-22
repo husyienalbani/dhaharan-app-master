@@ -502,7 +502,7 @@
                             <p>Silahkan mendaftarkan diri menjadi anggota dhaharan.id melalui tombol <b>regristasi</b>
                                 dibawah ini, agar memiliki akses untuk menambahkan informasi terkait panti asuhan, PMKS
                                 dan informasi lainnya.</p>
-                            <a href="#" class="btn btn-danger" tabindex="-1" role="button">REGISTRASI</a>
+                            <a href="/register" class="btn btn-danger" tabindex="-1" role="button">REGISTRASI</a>
                             <hr>
                             <p class="mb-0">“Jika kalian berbuat baik, sesungguhnya kalian berbuat baik bagi diri
                                 kalian sendiri” (QS. Al-Isra:7)</p>

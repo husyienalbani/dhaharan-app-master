@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use  App\Models\CategoryActivity;
+use App\Models\CategoryActivity;
 use Illuminate\Support\Str;
 
 class Category_activitiesTableSeeder extends Seeder

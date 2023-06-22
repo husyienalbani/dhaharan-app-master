@@ -66,8 +66,8 @@
   <main id="main">
     <!-- ======= activity Details Section ======= -->
     <div class="d-grid gap-2 d-sm-flex justify-content-start">
-      <a href="/map" class="btn btn-outline-danger btn-sm" style="margin-left: 20px; margin-top: 20px;" type="button"><i
-          class='bx bx-x'></i></a>
+      <a href="/map/#peta" class="btn btn-outline-danger btn-sm" style="margin-left: 20px; margin-top: 20px;"
+        type="button"><i class='bx bx-x'></i></a>
     </div>
     <section id="activity-details" class="activity-details">
       <div class="container">

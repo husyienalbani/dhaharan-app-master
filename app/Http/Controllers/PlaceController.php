@@ -51,8 +51,12 @@ class PlaceController extends Controller
                 'location' => $request->location,
                 'PlaceInfo' => $request->PlaceInfo,
                 'cover'     => $imageName,
+                'user_id' => auth()->user()->id,
+                'is_approved' => false,
             ]);
-           $post->save();
+
+            $post->save();
+
         }
 
         if($request->hasFile("image_places")){
@@ -66,7 +70,7 @@ class PlaceController extends Controller
 
             }
         }
-        return redirect()->route('places.index')->with(['success' => 'Data Berhasil Disimpan!']);
+        return redirect()->route('places.index')->with(['success' => 'Data Berhasil Disimpan & Sedang Menunggu Persetujuan!']);
     }
        
     public function show(string $id)
@@ -138,19 +142,29 @@ class PlaceController extends Controller
 
     public function destroy($id)
     {
-         $posts=Place::findOrFail($id);
+        $posts=Place::findOrFail($id);
 
-         if (File::exists("coverplace/".$posts->cover)) {
-             File::delete("coverplace/".$posts->cover);
-         }
-         $images=ImagePlace::where("place_id",$posts->id)->get();
-         foreach($images as $image){
-         if (File::exists("imageplace/".$image->image)) {
-            File::delete("imageplace/".$image->image);
+        if (File::exists("coverplace/".$posts->cover)) {
+            File::delete("coverplace/".$posts->cover);
         }
-         }
-         $posts->delete();
-         return back();
+        $images=ImagePlace::where("place_id",$posts->id)->get();
+        foreach($images as $image){
+        if (File::exists("imageplace/".$image->image)) {
+        File::delete("imageplace/".$image->image);
+    }
+        }
+        $posts->delete();
+        return back();
 
     }
+
+    public function approve($id)
+{
+    $place = Place::find($id);
+    $place->is_approved = true;
+    $place->save();
+
+    return redirect('/places');
+}
+
 }

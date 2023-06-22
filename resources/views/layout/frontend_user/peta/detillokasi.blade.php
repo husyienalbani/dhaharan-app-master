@@ -59,8 +59,8 @@
   <main id="main">
     <!-- ======= activity Details Section ======= -->
     <div class="d-grid gap-2 d-sm-flex justify-content-start">
-      <a href="/map" class="btn btn-outline-danger btn-sm" style="margin-left: 20px; margin-top: 20px;" type="button"><i
-          class='bx bx-x'></i></a>
+      <a href="/map/#peta" class="btn btn-outline-danger btn-sm" style="margin-left: 20px; margin-top: 20px;"
+        type="button"><i class='bx bx-x'></i></a>
     </div>
     <section id="activity-details" class="activity-details">
       <div class="container" style="background-color: #eeeeed; max-width: 1400px">
@@ -101,7 +101,7 @@
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="activity-description" style="text-align: justify; margin: 20px">
-              <h2>Detail Lokasi</h2>
+              <h2>Detail Informasi</h2>
               <p>
                 {!! $places->PlaceInfo !!}
               </p>

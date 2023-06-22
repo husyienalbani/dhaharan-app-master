@@ -91,7 +91,8 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="formFile" class="form-label"><b>Bukti Donasi</b></label>
+                                                <label for="formFile" class="form-label"><b>Bukti
+                                                        Pengeluaran</b></label>
                                                 <input class="form-control @error('expense_image') is-invalid @enderror"
                                                     name="expense_image" type="file" id="expense_image"
                                                     style="font-size: small">

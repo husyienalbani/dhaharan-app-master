@@ -9,7 +9,7 @@ class Place extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name', 'category_id', 'location','PlaceInfo','cover'
+        'name', 'category_id', 'location','PlaceInfo','cover','user_id', 'is_approved'
     ];
 
 
@@ -46,6 +46,11 @@ class Place extends Model
         }
 
         return 'https://via.placeholder.com/150x200.png?text=No+Cover';
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
     
 }

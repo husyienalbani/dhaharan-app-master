@@ -35,18 +35,18 @@
         <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
             <div class="brand-logo">
                 <a href="/">
-                    <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" class="logo-icon" alt="logo icon" />
+                    <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" class="logo-icon" alt="logo icon">
                     <h5 class="logo-text">Dhaharan.id</h5>
                 </a>
             </div>
             <ul class="sidebar-menu do-nicescrol">
                 <li class="sidebar-header">MENU</li>
+                @if(Auth::check() && Auth::user()->role === '1')
                 <li>
-                    <a href="/dasboard">
+                    <a href="/dashboard">
                         <i class="zmdi zmdi-view-dashboard"></i> <span>Dashboard</span>
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#dropdownadmin" aria-expanded="false"
                         aria-controls="ui-basic">
@@ -57,10 +57,10 @@
                     <div class="collapse" id="dropdownadmin">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item">
-                                <a class="nav-link" href="/admins">Admin</a>
+                                <a class="nav-link" href="/users">User</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/users">Member</a>
+                                <a class="nav-link" href="/approves">Approve</a>
                             </li>
                         </ul>
                     </div>
@@ -70,7 +70,6 @@
                         <i class="zmdi zmdi-view-web"></i> <span>Activity</span>
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#dropdownmaps" aria-expanded="false"
                         aria-controls="ui-basic">
@@ -118,18 +117,47 @@
                         <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="profile.html">
                         <i class="zmdi zmdi-face"></i> <span>Profile</span>
                     </a>
                 </li>
-
                 <li class="sidebar-header">MORE INFO</li>
                 <li>
                     <a href="javaScript:void();"><i class="zmdi zmdi-print text-success"></i>
                         <span>Print</span></a>
                 </li>
+            </ul>
+            @else
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#dropdownmaps" aria-expanded="false"
+                    aria-controls="ui-basic">
+                    <i class="zmdi zmdi-map"></i></span>
+                    <span class="menu-title">Maps</span>
+                    <i class="zmdi zmdi-chevron-down" style="float:right; margin-right:10px"></i>
+                </a>
+                <div class="collapse" id="dropdownmaps">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/categories">Category </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/places">Place</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <i class="zmdi zmdi-face"></i> <span>Profile</span>
+                </a>
+            </li>
+            <li class="sidebar-header">MORE INFO</li>
+            <li>
+                <a href="javaScript:void();"><i class="zmdi zmdi-print text-success"></i>
+                    <span>Print</span></a>
+            </li>
+            @endif
             </ul>
         </div>
         <!--End sidebar-wrapper-->
@@ -151,24 +179,7 @@
                             href="javascript:void();">
                             <i class="fa fa-bell-o"></i></a>
                     </li>
-                    <li class="nav-item language">
-                        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown"
-                            href="javascript:void();"><i class="fa fa-flag"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-item">
-                                <i class="flag-icon flag-icon-gb mr-2"></i> English
-                            </li>
-                            <li class="dropdown-item">
-                                <i class="flag-icon flag-icon-fr mr-2"></i> French
-                            </li>
-                            <li class="dropdown-item">
-                                <i class="flag-icon flag-icon-cn mr-2"></i> Chinese
-                            </li>
-                            <li class="dropdown-item">
-                                <i class="flag-icon flag-icon-de mr-2"></i> German
-                            </li>
-                        </ul>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
                             <span class="user-profile"><img src="{{ asset('/assets/admin/images/man.png') }}"
@@ -183,25 +194,26 @@
                                                 src="{{ asset('/assets/admin/images/man.png') }}" alt="user avatar" />
                                         </div>
                                         <div class="media-body">
-                                            <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
-                                            <p class="user-subtitle">mccoy@example.com</p>
+                                            <h6 class="mt-2 user-title">{{ Auth::user()->name }}</h6>
+                                            <p class="user-subtitle">{{ Auth::user()->email }}</p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            <li class="dropdown-divider"></li>
-                            <li class="dropdown-divider"></li>
-                            <li class="dropdown-item">
-                                <i class="icon-wallet mr-2"></i> Account
-                            </li>
+
                             <li class="dropdown-divider"></li>
                             <li class="dropdown-item">
-                                <i class="icon-settings mr-2"></i> Setting
+                                {{-- <a class="icon-power mr-2" href="{{ route('logout') }}"> Logout</a> --}}
+                                <a class="dropdown-item icon-power mr-2" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
                             </li>
-                            <li class="dropdown-divider"></li>
-                            <li class="dropdown-item">
-                                <i class="icon-power mr-2"></i> Logout
-                            </li>
+
                         </ul>
                     </li>
                 </ul>

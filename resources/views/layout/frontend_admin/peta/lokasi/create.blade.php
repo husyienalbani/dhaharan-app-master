@@ -57,8 +57,7 @@
                                                         lokasi</b></label>
                                                 <input type="text"
                                                     class="form-control @error('name') is-invalid @enderror" name="name"
-                                                    value="{{ old('name') }}"
-                                                    placeholder="Masukan Nama Lokasi Aksi Sosial"
+                                                    value="{{ old('name') }}" placeholder="Masukan Nama Lokasi"
                                                     style="font-size: small" />
                                                 <!-- error message untuk title -->
                                                 @error('name')
@@ -125,8 +124,8 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="" class="form-label"><b>Deskripsi
-                                                        Lokasi</b></label>
+                                                <label for="" class="form-label"><b>Detail
+                                                        Informasi</b></label>
                                                 <textarea
                                                     class="form-control @error('description') is-invalid @enderror"
                                                     name="PlaceInfo" rows="5" placeholder="PlaceInfo"></textarea>
