@@ -1,6 +1,6 @@
 @extends('layout.master_admin.create')
 @section('title')
-<title>Create</title>
+<title>Edit</title>
 @endsection
 @section('adddata')
 <div class="card card-create mx-auto my-4" style="margin-top: 50px">
@@ -14,7 +14,7 @@
         <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
       </div>
       <div class="card-title text-uppercase text-center py-3">
-        EDIT REKAP BULANAN
+        EDIT MONTH RECAPITULATION
       </div>
       <div class="modal-body">
         <div class="col-md-12">
@@ -30,7 +30,7 @@
                   <div class="row">
                     <div class="col-md-12 col-12" style="margin-bottom: 5px">
                       <div class="mb-3">
-                        <label for="date" class="form-label"><b>Tanggal
+                        <label for="date" class="form-label"><b>Date
                           </b></label>
                         <input type="date" class="form-control @error('recapitulation_date') is-invalid @enderror"
                           name="date" value="{{ old('date',$finance_recapitulation->date) }}"
@@ -52,7 +52,7 @@
                   <div class="row">
                     <div class="col-md-6 col-12" style="margin-bottom: 5px">
                       <div class="mb-3">
-                        <label for="income" class="form-label"><b>Pemasukan</b></label>
+                        <label for="income" class="form-label"><b>Income</b></label>
                         <input type="number" class="form-control @error('income') is-invalid @enderror" name="income"
                           value="{{ old('income', $finance_recapitulation->income) }}"
                           placeholder="Masukan Nominal Pemasukan" style="font-size: small;">
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-md-6 col-12" style="margin-bottom: 5px">
                       <div class="mb-3">
-                        <label for="expense" class="form-label"><b>Pengeluaran</b></label>
+                        <label for="expense" class="form-label"><b>Cost</b></label>
                         <input type="number" class="form-control @error('expense') is-invalid @enderror" name="expense"
                           value="{{ old('expense',$finance_recapitulation->expense) }}"
                           placeholder="Masukkan Nominal Pengeluaran" style="font-size: small;">

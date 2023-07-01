@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dasboard-Admin</title>
+    <title>Dhaharan.id | Dashboard</title>
     <!-- loader-->
     <link href="{{ asset('/assets/admin/css/pace.min.css') }}" rel="stylesheet" />
     <script src="{{ asset('/assets/admin/js/pace.min.js') }}"></script>
     <!--favicon-->
-    <link rel="icon" href="{{ asset('/assets/admin/images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('/assets/admin/images/favicon.png') }}" type="image/x-icon" />
+    <!-- simplebar CSS-->
+    <link href="{{ asset('/assets/admin/plugins/fullcalendar/css/fullcalendar.min.css') }}" rel="stylesheet" />
     <!-- simplebar CSS-->
     <link href="{{ asset('/assets/admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
     <!-- Bootstrap core CSS-->
@@ -103,7 +105,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/finance_expenses">Finance <span
-                                        class="badge bg-secondary">Expanse</span></a>
+                                        class="badge bg-secondary">Expense</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/finance_recapitulations">Finance <span
@@ -113,7 +115,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="calendar.html">
+                    <a href="/calender">
                         <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
                     </a>
                 </li>
@@ -254,7 +256,7 @@
                 <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
             </div>
             <div class="right-sidebar-content">
-                <p class="mb-0">Gaussion Texture</p>
+                <p class="mb-0">Image Background</p>
                 <hr />
 
                 <ul class="switcher">
@@ -262,11 +264,9 @@
                     <li id="theme2"></li>
                     <li id="theme3"></li>
                     <li id="theme4"></li>
-                    <li id="theme5"></li>
-                    <li id="theme6"></li>
                 </ul>
 
-                <p class="mb-0">Gradient Background</p>
+                <p class="mb-0">Color Background</p>
                 <hr />
 
                 <ul class="switcher">
@@ -276,9 +276,6 @@
                     <li id="theme10"></li>
                     <li id="theme11"></li>
                     <li id="theme12"></li>
-                    <li id="theme13"></li>
-                    <li id="theme14"></li>
-                    <li id="theme15"></li>
                 </ul>
             </div>
         </div>
@@ -298,6 +295,11 @@
     <!-- Custom scripts -->
     <script src="{{ asset('/assets/admin/js/app-script.js') }}"></script>
     {{-- <script src="{{ asset('/assets/admin/plugins/Chart.js/Chart.min.js') }}"></script> --}}
+
+    <!-- Full Calendar -->
+    <script src="{{ asset('/assets/admin/plugins/fullcalendar/js/moment.min.js') }}"></script>
+    <script src="{{ asset('/assets/admin/plugins/fullcalendar/js/fullcalendar.min.js') }}"></script>
+    <script src="{{ asset('/assets/admin/plugins/fullcalendar/js/fullcalendar-custom-script.js') }}"></script>
 
     <!-- Index js -->
     <script src="{{ asset('/assets/admin/js/index.js') }}"></script>

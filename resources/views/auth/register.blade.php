@@ -1,6 +1,9 @@
 @extends('layout.master_admin.create')
 @section('title')
 <title>Register</title>
+<!-- Favicons -->
+<link href="{{ asset('/assets/user/img/favicon.png') }}" rel="icon" />
+<link href="{{ asset('/assets/user/img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
 @endsection
 @section('adddata')
 

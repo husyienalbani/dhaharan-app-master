@@ -3,7 +3,7 @@
 <h4 style="padding-top: 10px; text-align: center;">REKAPITULASI KEUANGAN</h4>
 <div class="card" style="margin-top: 20px">
   <div class="card-header">
-    <i class="bx bx-user"></i> <b>Data Saldo</b>
+    <i class="bx bx-user"></i> <b>Saldo Data</b>
   </div>
   <div class="card-body">
     <nav class="navbar navbar-light bg-light">
@@ -23,9 +23,9 @@
         <thead class="table-dark">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Tanggal</th>
-            <th scope="col">Pemasukan</th>
-            <th scope="col">Pengeluaran</th>
+            <th scope="col">Date</th>
+            <th scope="col">Income</th>
+            <th scope="col">Cost</th>
             <th scope="col">Saldo</th>
             <th scope="col">Action</th>
           </tr>

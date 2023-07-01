@@ -440,37 +440,26 @@ small {
     transition: background 0.3s;
 }
 #theme2 {
-    background-image: url(../images/bg-themes/2.png);
+    background-image: url(../images/bg-themes/1.JPG);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
 }
 #theme3 {
-    background-image: url(../images/bg-themes/3.png);
+    background-image: url(../images/bg-themes/2.JPG);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
 }
 #theme4 {
-    background-image: url(../images/bg-themes/4.png);
+    background-image: url(../images/bg-themes/3.JPG);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
 }
-#theme5 {
-    background-image: url(../images/bg-themes/5.png);
-    background-size: 100% 100%;
-    background-position: center;
-    transition: background 0.3s;
-}
-#theme6 {
-    background-image: url(../images/bg-themes/6.png);
-    background-size: 100% 100%;
-    background-position: center;
-    transition: background 0.3s;
-}
+
 #theme7 {
-    background-image: linear-gradient(45deg, #0c675e, #069e90);
+    background-image: linear-gradient(45deg, #000000, #000000);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
@@ -491,25 +480,25 @@ small {
     transition: background 0.3s;
 }
 #theme9 {
-    background-image: linear-gradient(45deg, #29323c, #485563);
+    background-image: linear-gradient(45deg, #9db7b3, #ffffff);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
 }
 #theme10 {
-    background-image: linear-gradient(45deg, #795548, #945c48);
+    background-image: linear-gradient(45deg, #edbc80, #ffffff);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
 }
 #theme11 {
-    background-image: linear-gradient(45deg, #1565c0, #1e88e5);
+    background-image: linear-gradient(45deg, #e88325, #d3550c);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
 }
 #theme12 {
-    background-image: linear-gradient(45deg, #65379b, #886aea);
+    background-image: linear-gradient(45deg, #18ae9f, #0d8488);
     background-size: 100% 100%;
     background-position: center;
     transition: background 0.3s;
@@ -539,22 +528,16 @@ body.bg-theme1 {
     background-image: url(../images/bg-themes/7.jpeg);
 }
 body.bg-theme2 {
-    background-image: url(../images/bg-themes/2.png);
+    background-image: url(../images/bg-themes/1.JPG);
 }
 body.bg-theme3 {
-    background-image: url(../images/bg-themes/3.png);
+    background-image: url(../images/bg-themes/2.JPG);
 }
 body.bg-theme4 {
-    background-image: url(../images/bg-themes/4.png);
-}
-body.bg-theme5 {
-    background-image: url(../images/bg-themes/5.png);
-}
-body.bg-theme6 {
-    background-image: url(../images/bg-themes/6.png);
+    background-image: url(../images/bg-themes/3.JPG);
 }
 body.bg-theme7 {
-    background-image: linear-gradient(45deg, #0c675e, #069e90);
+    background-image: linear-gradient(45deg, #000000, #000000);
 }
 body.bg-theme8 {
     background-image: linear-gradient(
@@ -569,16 +552,16 @@ body.bg-theme8 {
     );
 }
 body.bg-theme9 {
-    background-image: linear-gradient(45deg, #29323c, #485563);
+    background-image: linear-gradient(45deg, #9db7b3, #ffffff);
 }
 body.bg-theme10 {
-    background-image: linear-gradient(45deg, #795548, #945c48);
+    background-image: linear-gradient(45deg, #edbc80, #ffffff);
 }
 body.bg-theme11 {
-    background-image: linear-gradient(45deg, #1565c0, #1e88e5);
+    background-image: linear-gradient(45deg, #e88325, #d3550c);
 }
 body.bg-theme12 {
-    background-image: linear-gradient(45deg, #65379b, #886aea);
+    background-image: linear-gradient(45deg, #18ae9f, #0d8488);
 }
 body.bg-theme13 {
     background-image: linear-gradient(180deg, #ff5447, #f1076f);

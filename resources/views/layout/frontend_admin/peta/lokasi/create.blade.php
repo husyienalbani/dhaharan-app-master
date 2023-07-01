@@ -33,7 +33,7 @@
                 <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
             </div>
             <div class="card-title text-uppercase text-center py-3">
-                TAMBAH LOKASI
+                ADD LOCATION
             </div>
             <div class="modal-body">
                 <div class="col-md-12">
@@ -53,8 +53,7 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="Name" class="form-label"><b>Nama
-                                                        lokasi</b></label>
+                                                <label for="Name" class="form-label"><b>Location Name</b></label>
                                                 <input type="text"
                                                     class="form-control @error('name') is-invalid @enderror" name="name"
                                                     value="{{ old('name') }}" placeholder="Masukan Nama Lokasi"
@@ -69,8 +68,7 @@
                                         </div>
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="category" class="form-label"><b>Kategori
-                                                        Lokasi</b></label>
+                                                <label for="category" class="form-label"><b>Map Category</b></label>
                                                 <select class="form-control @error('category_id') is-invalid @enderror"
                                                     name="category_id" id="category_id" style="font-size: small">
                                                     <option value="" selected disabled style="font-size: small">Pilih
@@ -103,7 +101,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="location" class="form-label"><b>Lokasi</b></label>
+                                                <label for="location" class="form-label"><b>Location</b></label>
                                                 <input type="text" name="location" id="location" readonly
                                                     class="form-control  @error('location') is-invalid @enderror"
                                                     value="{{ old('location') }}">
@@ -124,8 +122,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="" class="form-label"><b>Detail
-                                                        Informasi</b></label>
+                                                <label for="" class="form-label"><b>More Info</b></label>
                                                 <textarea
                                                     class="form-control @error('description') is-invalid @enderror"
                                                     name="PlaceInfo" rows="5" placeholder="PlaceInfo"></textarea>
@@ -146,7 +143,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="formFile" class="form-label"><b>Gambar Cover</b></label>
+                                                <label for="formFile" class="form-label"><b>Image Cover</b></label>
                                                 <input class="form-control @error('cover') is-invalid @enderror"
                                                     name="cover" type="file" style="font-size: small" />
                                                 @error('cover')

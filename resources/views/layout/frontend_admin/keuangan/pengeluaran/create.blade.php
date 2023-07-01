@@ -14,7 +14,7 @@
                 <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
             </div>
             <div class="card-title text-uppercase text-center py-3">
-                TAMBAH PENGELUARAN
+                ADD EXPENSE
             </div>
             <div class="modal-body">
                 <div class="col-md-12">
@@ -28,7 +28,7 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="expenseName" class="form-label"><b>Nama</b></label>
+                                                <label for="expenseName" class="form-label"><b>Cost Name</b></label>
                                                 <input type="text"
                                                     class="form-control @error('expense_name') is-invalid @enderror"
                                                     name="expense_name" value="{{ old('expense_name') }}"
@@ -67,8 +67,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="expenseDate" class="form-label"><b>Tanggal
-                                                        Donasi</b></label>
+                                                <label for="expenseDate" class="form-label"><b>Cost Date</b></label>
                                                 <input type="date"
                                                     class="form-control @error('expense_date') is-invalid @enderror"
                                                     name="expense_date" value="{{ old('expense_date') }}""
@@ -91,8 +90,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="formFile" class="form-label"><b>Bukti
-                                                        Pengeluaran</b></label>
+                                                <label for="formFile" class="form-label"><b>Proof</b></label>
                                                 <input class="form-control @error('expense_image') is-invalid @enderror"
                                                     name="expense_image" type="file" id="expense_image"
                                                     style="font-size: small">

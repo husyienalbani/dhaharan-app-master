@@ -14,7 +14,7 @@
                 <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
             </div>
             <div class="card-title text-uppercase text-center py-3">
-                TAMBAH DONASI
+                ADD DONATION
             </div>
             <div class="modal-body">
                 <div class="col-md-12">
@@ -28,7 +28,7 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="DonationName" class="form-label"><b>Nama</b></label>
+                                                <label for="DonationName" class="form-label"><b>Name</b></label>
                                                 <input type="text"
                                                     class="form-control @error('donation_name') is-invalid @enderror"
                                                     name="donation_name" value="{{ old('donation_name') }}"
@@ -65,14 +65,13 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="DonationCategory" class="form-label"><b>Jenis
-                                                        Donasi</b></label>
+                                                <label for="DonationCategory" class="form-label"><b>Catgeory</b></label>
                                                 <select
                                                     class="form-control @error('donation_category') is-invalid @enderror"
                                                     name="donation_category" value="{{ old('donation_category') }}"
                                                     style="font-size: small">
-                                                    <option>Uang</option>
-                                                    <option>Barang</option>
+                                                    <option>Money</option>
+                                                    <option>Item</option>
                                                 </select>
                                                 @error('donation_category')
                                                 <div class="alert alert-danger mt-2 text-center">
@@ -83,8 +82,8 @@
                                         </div>
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="DonationInformation"
-                                                    class="form-label"><b>Keterangan</b></label>
+                                                <label for="DonationInformation" class="form-label"><b>More
+                                                        Info</b></label>
                                                 <input type="text"
                                                     class="form-control @error('donation_information') is-invalid @enderror"
                                                     name="donation_information"
@@ -107,8 +106,8 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="DonationDate" class="form-label"><b>Tanggal
-                                                        Donasi</b></label>
+                                                <label for="DonationDate" class="form-label"><b>Donation
+                                                        Date</b></label>
                                                 <input type="date"
                                                     class="form-control @error('donation_date') is-invalid @enderror"
                                                     name="donation_date" value="{{ old('donation_date') }}""
@@ -130,7 +129,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="formFile" class="form-label"><b>Bukti Donasi</b></label>
+                                                <label for="formFile" class="form-label"><b>Proof</b></label>
                                                 <input
                                                     class="form-control @error('donation_image') is-invalid @enderror"
                                                     name="donation_image" type="file" id="donation_image"

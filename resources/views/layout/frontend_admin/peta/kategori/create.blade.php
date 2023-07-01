@@ -14,7 +14,7 @@
                 <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
             </div>
             <div class="card-title text-uppercase text-center py-3">
-                KATEGORI PETA
+                ADD MAP CATEGORY
             </div>
             <div class="modal-body">
                 <div class="col-md-12">
@@ -27,7 +27,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="category" class="form-label"><b>Kategori</b></label>
+                                                <label for="category" class="form-label"><b>Category</b></label>
                                                 <input type="text"
                                                     class="form-control @error('category') is-invalid @enderror"
                                                     name="name" value="{{ old('category') }}"

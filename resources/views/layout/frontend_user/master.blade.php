@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Dhaharan</title>
+    <title>Dhaharan.id</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -32,13 +32,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 
-
-    <!-- =======================================================
-  * Template Name: Mymap - v4.10.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-map/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -86,13 +79,14 @@
             <br />
             <h5>"Urun Kabagyan Lumantar Dhaharan"</h5>
             <p>
-                <i>Platform</i>
-                <span class="typed" data-typed-items="Berbagi Makanan dan Belajar Masak"></span>
+                <i>Social Comunity</i>
+                <span class="typed" data-typed-items="
+                <i> that love goodness, through sharing food from the results of cooking together </i>"></span>
             </p>
             <div class="social-links">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.instagram.com/dhaharan.id/" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
         </div>
     </section>
@@ -105,67 +99,151 @@
                 <div class="section-title">
                     <h2>ABOUT</h2>
                     <p>
-                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                        <i>Dhaharan.id is a social community that has a vision and goal of providing benefits by holding
+                            social activities where it is needed. The dhaharan.id community opens all donations to be
+                            distributed by food.</i>
                     </p>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-box iconbox-blue">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                        d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                                    </path>
-                                </svg>
-                                <i class="bx bxl-dribbble"></i>
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
                             </div>
-                            <h4><a href="">Lorem Ipsum</a></h4>
-                            <p>
-                                Voluptatum deleniti atque corrupti quos dolores et quas
-                                molestias excepturi
-                            </p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('/assets/user/img/About/A1.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Openness to Change</i></h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('/assets/user/img/About/A2.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Openness to Change</i></h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('/assets/user/img/About/A3.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Openness to Change</i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
                         data-aos-delay="200">
-                        <div class="icon-box iconbox-orange">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                        d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                                    </path>
-                                </svg>
-                                <i class="bx bx-file"></i>
+                        <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
                             </div>
-                            <h4><a href="">Sed Perspiciatis</a></h4>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore
-                            </p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('/assets/user/img/About/C1.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Spirit of Togetherness</i></h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('/assets/user/img/About/C3.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Spirit of Togetherness</i></h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('/assets/user/img/About/C2.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i> Spirit of Togetherness</i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-4 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
                         data-aos-delay="300">
-                        <div class="icon-box iconbox-pink">
-                            <div class="icon">
-                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                        d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
-                                    </path>
-                                </svg>
-                                <i class="bx bx-tachometer"></i>
+                        <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
                             </div>
-                            <h4><a href="">Magni Dolores</a></h4>
-                            <p>
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia
-                            </p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('/assets/user/img/About/B1.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Sympaty to Each Other</i></h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('/assets/user/img/About/B2.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Sympaty to Each Other</i></h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('/assets/user/img/About/B3.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5><i>Sympaty to Each Other</i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -176,55 +254,20 @@
         <section id="tim" class="tim">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>tim</h2>
+                    <h2>team</h2>
                 </div>
 
                 <div class="tim-slider swiper" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="tim-item">
-                                <img src="{{ asset('/assets/user/img/tim/tim-1.jpg') }}" class="tim-img" alt="" />
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Proin iaculis purus consequat sem cure digni ssim donec
-                                    porttitora entum suscipit rhoncus. Accusantium quam,
-                                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                    risus at semper.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="tim-item">
-                                <img src="{{ asset('/assets/user/img/tim/tim-2.jpg') }}" class="tim-img" alt="" />
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Export tempor illum tamen malis malis eram quae irure esse
-                                    labore quem cillum quid cillum eram malis quorum velit fore
-                                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                                    culpa.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="tim-item">
                                 <img src="{{ asset('/assets/user/img/tim/tim-3.jpg') }}" class="tim-img" alt="" />
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
+                                <h3>M Noval Abdul</h3>
+                                <h4>CEO (Chief Executive Officer) </h4>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim
-                                    sint quorum nulla quem veniam duis minim tempor labore quem
-                                    eram duis noster aute amet eram fore quis sint minim.
+                                    Bersama dhaharan jadi belajar banyak tentang kesenjangan pangan dan hal tersebut
+                                    meningkatkan kepedulian kita untuk terus berbagi dan mengedukasi.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -234,14 +277,26 @@
                         <div class="swiper-slide">
                             <div class="tim-item">
                                 <img src="{{ asset('/assets/user/img/tim/tim-4.jpg') }}" class="tim-img" alt="" />
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
+                                <h3>Esa Akbar</h3>
+                                <h4>COO (Chief Operating Officer)</h4>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                                    multos export minim fugiat minim velit minim dolor enim duis
-                                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                                    illum veniam.
+                                    Coba dulu aja sekali kalo tuman gasskeun ikut dhaharan...dhaharan merupakan wadah yg
+                                    asyik & unik untuk belajar masak dan berbagi kepada sesama.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="tim-item">
+                                <img src="{{ asset('/assets/user/img/tim/tim-2.jpg') }}" class="tim-img" alt="" />
+                                <h3>Indah Permata</h3>
+                                <h4>CFO (Chief Financial Officer)</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Semoga Dhaharan bisa lebih luas dalam menebar kebaikan.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -251,14 +306,33 @@
                         <div class="swiper-slide">
                             <div class="tim-item">
                                 <img src="{{ asset('/assets/user/img/tim/tim-5.jpg') }}" class="tim-img" alt="" />
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                                <h3>Dwi Ria Rizkiana</h3>
+                                <h4>Head of Kitchen</h4>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                                    aliqua veniam tempor noster veniam enim culpa labore duis
-                                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                                    fore nisi cillum quid.
+                                    Kegiatan dhaharan sangat menyenangkan dan membawa banyak manfaat, selain bisa
+                                    bertemu banyak teman baru, di dhaharan kita juga bisa belajar memasak dan membuat
+                                    makanan ringan. Poin plusnya lagi dhaharan bisa menambah rasa syukur kita karena
+                                    telah diberikan banyak rezeki untuk bisa saling berbagi. Semoga kegiatan dhaharan
+                                    bisa terus berlanjut sampai
+                                    kapanpun, bisa menyebarkan banyak manfaat pada lebih banyak orang yang membutuhkan
+                                    dan juga bisa lebih tepat sasaran sesuai tujuan dhaharan.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="tim-item">
+                                <img src="{{ asset('/assets/user/img/tim/tim-1.jpg') }}" class="tim-img" alt="" />
+                                <h3>Tasya Ayu</h3>
+                                <h4>Designer</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Dhaharan mengajak kita melihat banyak ‘kekurangan’ sehingga memantik kita untuk
+                                    mengupayakan lebih banyak kebaikan, salah satunya melalui program belajar memasak
+                                    dan berbagi makanan sehat.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -277,10 +351,8 @@
                 <div class="section-title">
                     <h2>ACTIVITY</h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Dignissimos voluptatem ut suscipit, reiciendis molestias iste
-                        corporis quaerat soluta esse eum tempore facere in quidem earum,
-                        beatae velit culpa fugiat tempora.
+                        <i>The activities of dhaharan.id community include social activities, skills training, and
+                            learning to cook. Everyone can join the activity.</i>
                     </p>
                 </div>
 
@@ -372,10 +444,8 @@
                 <div class="section-title">
                     <h2>FINANCE</h2>
                     <p>
-                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                        <i>All the financial income of the dhaharan community comes from the donations of helpful
+                            people.</i>
                     </p>
                 </div>
 
@@ -386,11 +456,11 @@
                     <table id=" tabeldonasi" class="table table-striped table-sm">
                         <thead>
                             <tr>
-                                <th>Nama</th>
-                                <th>Kategori</th>
+                                <th>Name</th>
+                                <th>Category</th>
                                 <th>Nominal</th>
-                                <th>Keterangan</th>
-                                <th>Tanggal</th>
+                                <th>More Info</th>
+                                <th>Date</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -415,8 +485,8 @@
                     <table id=" tabelpengeluaran" class="table table-striped table-sm">
                         <thead>
                             <tr>
-                                <th>Pengeluaran</th>
-                                <th>Tanggal</th>
+                                <th>Cost</th>
+                                <th>Date</th>
                                 <th>Nominal</th>
                             </tr>
                         </thead>
@@ -440,9 +510,9 @@
                     <table id=" tabelsaldo" class="table table-striped table-sm">
                         <thead>
                             <tr>
-                                <th>Tanggal</th>
-                                <th>Pemasukan</th>
-                                <th>Pengeluaran</th>
+                                <th>Date</th>
+                                <th>Income</th>
+                                <th>Expense</th>
                                 <th>Saldo</th>
                             </tr>
                         </thead>
@@ -469,9 +539,8 @@
                 <div class="section-title">
                     <h2>MORE INFO</h2>
                     <p>
-                        Berikut informasi kontak kami. Silahkan mendaftarkan diri menjadi anggota dhaharan.id melalui
-                        <b>regristasi</b> <i>form</i> dibawah ini, agar memiliki akses untuk menambahkan informasi
-                        terkait panti asuhan, PMKS dan informasi lainnya.
+                        <i>Here is our contact information. Please register as a member of dhaharan.id to be able to add
+                            location information for people who need help</i>
                     </p>
                 </div>
                 <div class="row mt-1">
@@ -480,32 +549,28 @@
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <p>Surakarta Regency</p>
                             </div>
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@example.com</p>
+                                <p>dhaharanid.com</p>
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
+                                <p>+62 812 3137 0015</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8 mt-5 mt-lg-0">
                         <div class="alert alert-warning text-center" role="alert">
-                            <h4 class="alert-heading"><b>INFORMASI PENTING!</b></h4>
-                            <p>Silahkan mendaftarkan diri menjadi anggota dhaharan.id melalui tombol <b>regristasi</b>
-                                dibawah ini, agar memiliki akses untuk menambahkan informasi terkait panti asuhan, PMKS
-                                dan informasi lainnya.</p>
+                            <h4 class="alert-heading"><b>ANNOUNCEMENT!</b></h4>
+                            <p><i>Please register here</i></p>
                             <a href="/register" class="btn btn-danger" tabindex="-1" role="button">REGISTRASI</a>
-                            <hr>
-                            <p class="mb-0">“Jika kalian berbuat baik, sesungguhnya kalian berbuat baik bagi diri
-                                kalian sendiri” (QS. Al-Isra:7)</p>
+                            <hr><i>If you do good, you do good for your own souls”</i> (QS. Al-Isra:7)</p>
                         </div>
                     </div>
                 </div>
@@ -521,17 +586,10 @@
             <div class="social-links">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.instagram.com/dhaharan.id/" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
             <div class="copyright">
-                &copy; Copyright <strong><span>Mymap</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX moreinfo form: https://bootstrapmade.com/free-html-bootstrap-template-my-map/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                &copy; Copyright <strong><span>Dhaharan.id</span></strong>. All Rights Reserved
             </div>
         </div>
     </footer>

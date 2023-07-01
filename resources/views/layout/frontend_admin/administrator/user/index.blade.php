@@ -1,9 +1,9 @@
 @extends('layout.master_admin.master')
 @section('content')
-<h4 style="padding-top: 10px; text-align: center;">PENGGUNA</h4>
+<h4 style="padding-top: 10px; text-align: center;">Users</h4>
 <div class="card" style="margin-top: 20px">
   <div class="card-header">
-    <i class="bx bx-user"></i> <b>Data Pengguna</b>
+    <i class="bx bx-user"></i> <b>User Data</b>
   </div>
   <div class="card-body">
     <nav class="navbar navbar-light bg-light">

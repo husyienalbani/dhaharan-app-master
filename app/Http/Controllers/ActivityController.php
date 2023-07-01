@@ -24,9 +24,7 @@ class ActivityController extends Controller
 
         //render view with posts
         return view('layout.frontend_admin.kegiatan.index', compact('posts'));
-        
     }
-
     /**
      * Show the form for creating a new resource.
      */
@@ -162,7 +160,6 @@ class ActivityController extends Controller
          return back();
 
     }
-
 
     /*
     fungsi untuk Detail

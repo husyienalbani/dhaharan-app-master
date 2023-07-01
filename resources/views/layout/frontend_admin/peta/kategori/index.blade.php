@@ -1,9 +1,9 @@
 @extends('layout.master_admin.master')
 @section('content')
-<h4 style="padding-top: 10px; text-align: center;">KATEGORI PETA</h4>
+<h4 style="padding-top: 10px; text-align: center;">MAP CATEGORY</h4>
 <div class="card" style="margin-top: 20px">
   <div class="card-header">
-    <i class="bx bx-user"></i> <b>Data Kategori Peta</b>
+    <i class="bx bx-user"></i> <b>Map Category Data</b>
   </div>
   <div class="card-body">
     <nav class="navbar navbar-light bg-light">
@@ -23,7 +23,7 @@
         <thead class="table-dark">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Nama</th>
+            <th scope="col">Name</th>
             <th scope="col">Action</th>
           </tr>
         </thead>

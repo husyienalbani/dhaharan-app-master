@@ -35,13 +35,13 @@
                         <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
                     </div>
                     <div class="card-title text-uppercase text-center py-3">
-                        GAMBAR KEGIATAN
+                        IMAGE PLACE
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="card" style="padding: 10px;">
                                 <div class="card-body" style="padding:5px">
-                                    <h7 class="card-title" style="font-size: 13px">Gambar Cover</h7>
+                                    <h7 class="card-title" style="font-size: 13px">Image Cover</h7>
                                 </div>
                                 <form action="/deletecover/{{ $place->id }}" method="post">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -58,7 +58,7 @@
                         <div class="col-12">
                             <div class="card" style="padding: 10px;">
                                 <div class="card-body" style="padding:5px">
-                                    <h7 class="card-title" style="font-size: 13px">Gambar Kegiatan</h7>
+                                    <h7 class="card-title" style="font-size: 13px">Image Location</h7>
                                 </div>
                                 @if (count($place->images)>0)
                                 @foreach ($place->images as $img)
@@ -85,7 +85,7 @@
                         <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
                     </div>
                     <div class="card-title text-uppercase text-center py-3">
-                        EDIT KEGIATAN
+                        EDIT PLACE
                     </div>
                     <div class="modal-body" style="padding: 1px">
                         <div class="col-md-12">
@@ -107,8 +107,8 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="Name" class="form-label"><b>Nama
-                                                                lokasi</b></label>
+                                                        <label for="Name" class="form-label"><b>Location
+                                                                Name</b></label>
                                                         <input type="text"
                                                             class="form-control @error('name') is-invalid @enderror"
                                                             name="name" value="{{ $place->name }}"
@@ -124,8 +124,8 @@
                                                 </div>
                                                 <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="category" class="form-label"><b>Kategori
-                                                                Lokasi</b></label>
+                                                        <label for="category" class="form-label"><b>Place
+                                                                Category</b></label>
                                                         <select
                                                             class="form-control @error('category_id') is-invalid @enderror"
                                                             name="category_id" id="category_id"
@@ -155,7 +155,7 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="location" class="form-label"><b>Lokasi</b></label>
+                                                        <label for="location" class="form-label"><b>Location</b></label>
                                                         <input type="text" name="location" id="location" readonly
                                                             class="form-control  @error('location') is-invalid @enderror"
                                                             value="{{ $place->location }}">
@@ -176,8 +176,7 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="" class="form-label"><b>Detail
-                                                                Informasi</b></label>
+                                                        <label for="" class="form-label"><b>More Info</b></label>
                                                         <textarea
                                                             class="form-control @error('description') is-invalid @enderror"
                                                             name="PlaceInfo" rows="5" placeholder="PlaceInfo"> {!!
@@ -199,7 +198,7 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="formFile" class="form-label"><b>Gambar
+                                                        <label for="formFile" class="form-label"><b>Image
                                                                 Cover</b></label>
                                                         <input class="form-control @error('cover') is-invalid @enderror"
                                                             name="cover" type="file" style="font-size: small" />
@@ -214,8 +213,8 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="formFile" class="form-label"><b>Gambar
-                                                                Kegiatan</b></label>
+                                                        <label for="formFile" class="form-label"><b>Image
+                                                                Place</b></label>
                                                         <input
                                                             class="form-control @error('image_places') is-invalid @enderror"
                                                             name="image_places[]" multiple type="file"

@@ -1,6 +1,6 @@
 @extends('layout.master_admin.create')
 @section('title')
-<title>Create Activity</title>
+<title>Edit Activity</title>
 @endsection
 @section('adddata')
 <div class="card card-create mx-auto my-4" style="padding: 10px; width:100%;">
@@ -16,13 +16,13 @@
                         <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
                     </div>
                     <div class="card-title text-uppercase text-center py-3">
-                        GAMBAR KEGIATAN
+                        ACTIVITY IMAGE
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="card" style="padding: 10px;">
                                 <div class="card-body" style="padding:5px">
-                                    <h7 class="card-title" style="font-size: 13px">Gambar Cover</h7>
+                                    <h7 class="card-title" style="font-size: 13px">Cover Image</h7>
                                 </div>
                                 <form action="/deletecover/{{ $activity->id }}" method="post">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -39,7 +39,7 @@
                         <div class="col-12">
                             <div class="card" style="padding: 10px;">
                                 <div class="card-body" style="padding:5px">
-                                    <h7 class="card-title" style="font-size: 13px">Gambar Kegiatan</h7>
+                                    <h7 class="card-title" style="font-size: 13px">Activity Image</h7>
                                 </div>
                                 @if (count($activity->images)>0)
                                 @foreach ($activity->images as $img)
@@ -66,7 +66,7 @@
                         <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
                     </div>
                     <div class="card-title text-uppercase text-center py-3">
-                        EDIT KEGIATAN
+                        EDIT ACTIVITY
                     </div>
                     <div class="modal-body">
                         <div class="col-md-12">
@@ -80,8 +80,8 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="ActivityName" class="form-label"><b>Nama
-                                                                Kegiatan</b></label>
+                                                        <label for="ActivityName" class="form-label"><b>Activity
+                                                                Name</b></label>
                                                         <input type="text"
                                                             class="form-control @error('name') is-invalid @enderror"
                                                             name="name" value="{{ $activity->name }}"
@@ -97,8 +97,8 @@
                                                 </div>
                                                 <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="ActivityCategory" class="form-label"><b>Kategori
-                                                                Kegiatan</b></label>
+                                                        <label for="ActivityCategory" class="form-label"><b>Activity
+                                                                Category</b></label>
                                                         <select
                                                             class="form-control @error('category_id') is-invalid @enderror"
                                                             name="category_id" style="font-size: small">
@@ -128,8 +128,8 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="ActivityDate" class="form-label"><b>Tanggal
-                                                                Kegiatan</b></label>
+                                                        <label for="ActivityDate" class="form-label"><b>Activity
+                                                                Date</b></label>
                                                         <input type="date"
                                                             class="form-control @error('Activity_date') is-invalid @enderror"
                                                             name="date" value="{{ $activity->date }}"
@@ -144,8 +144,8 @@
                                                 </div>
                                                 <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="ActivityAddress" class="form-label"><b>Alamat
-                                                                Kegiatan</b></label>
+                                                        <label for="ActivityAddress" class="form-label"><b>Activity
+                                                                Address</b></label>
                                                         <input type="text"
                                                             class="form-control @error('Activity_nominal') is-invalid @enderror"
                                                             name="address" value="{{ $activity->address }}"
@@ -168,8 +168,8 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="ActivityCost" class="form-label"><b>Pengeluaran
-                                                                Kegiatan</b></label>
+                                                        <label for="ActivityCost" class="form-label"><b>Activity
+                                                                Cost</b></label>
                                                         <input type="float"
                                                             class="form-control @error('cost') is-invalid @enderror"
                                                             name="cost" value="{{ $activity->cost }}"
@@ -192,8 +192,8 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="ActivityDescription" class="form-label"><b>Deskripsi
-                                                                Kegiatan</b></label>
+                                                        <label for="ActivityDescription"
+                                                            class="form-label"><b>Description</b></label>
                                                         <textarea
                                                             class="form-control @error('activityinfo') is-invalid @enderror"
                                                             name="activityinfo" rows="5" placeholder="activityinfo"> {!!
@@ -215,8 +215,8 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="formFile" class="form-label"><b>Gambar
-                                                                Cover</b></label>
+                                                        <label for="formFile" class="form-label"><b>Cover
+                                                                Image</b></label>
                                                         <input class="form-control @error('cover') is-invalid @enderror"
                                                             name="cover" type="file" style="font-size: small" />
                                                         @error('cover')
@@ -230,8 +230,8 @@
                                             <div class="row">
                                                 <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                                     <div class="mb-3">
-                                                        <label for="formFile" class="form-label"><b>Gambar
-                                                                Kegiatan</b></label>
+                                                        <label for="formFile" class="form-label"><b>Activity
+                                                                Image</b></label>
                                                         <input
                                                             class="form-control @error('activity_images') is-invalid @enderror"
                                                             name="activity_images[]" multiple type="file"

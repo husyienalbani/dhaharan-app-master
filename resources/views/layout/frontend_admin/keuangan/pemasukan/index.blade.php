@@ -1,9 +1,9 @@
 @extends('layout.master_admin.master')
 @section('content')
-<h4 style="padding-top: 10px; text-align: center;">PEMASUKAN KEUANGAN</h4>
+<h4 style="padding-top: 10px; text-align: center;">FINANCE DONATIONS</h4>
 <div class="card" style="margin-top: 20px">
   <div class="card-header">
-    <i class="bx bx-user"></i> <b>Data Donasi</b>
+    <i class="bx bx-user"></i> <b>Donation Data</b>
   </div>
   <div class="card-body">
     <nav class="navbar navbar-light bg-light">
@@ -23,12 +23,12 @@
         <thead class="table-dark">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Nama</th>
-            <th scope="col">Jenis</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
             <th scope="col">Nominal</th>
-            <th scope="col">Ket</th>
-            <th scope="col">Tanggal</th>
-            <th scope="col">Bukti</th>
+            <th scope="col">More Info</th>
+            <th scope="col">Date</th>
+            <th scope="col">Proof</th>
             <th scope="col">Action</th>
           </tr>
         </thead>

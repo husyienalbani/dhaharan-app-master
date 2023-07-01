@@ -2,11 +2,11 @@
 @section('content')
 
 <!--Data Kategori-->
-<h4 style="padding-top: 10px; text-align: center;">KEGIATAN AKSI SOSIAL</h4>
+<h4 style="padding-top: 10px; text-align: center;">Social Activity</h4>
 <div class="card" style="margin-top: 20px">
   <!--Data Kegiatan-->
   <div class="card-header">
-    <i class="bx bx-user"></i> <b>Data Kegiatan</b>
+    <i class="bx bx-user"></i> <b>Activity Data</b>
   </div>
   <div class="card-body">
     <nav class="navbar navbar-light bg-light">
@@ -26,11 +26,11 @@
         <thead class="table-dark">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Nama</th>
-            <th scope="col">Kategori</th>
-            <th scope="col">Tanggal</th>
-            <th scope="col">Alamat</th>
-            <th scope="col">Pengeluaran</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Date</th>
+            <th scope="col">Address</th>
+            <th scope="col">Cost</th>
             {{-- <th scope="col">Deskripsi</th> --}}
             <th scope="col">Cover</th>
             {{-- <th scope="col">Image</th> --}}

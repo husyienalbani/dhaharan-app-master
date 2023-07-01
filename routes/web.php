@@ -36,6 +36,10 @@ Route::middleware('auth')->group(function(){
 
     Route::post('/places/{id}/approve', [PlaceController::class, 'approve'])->name('places.approve');
 
+    Route::get('/calender', function () {
+        return view('layout/frontend_admin/calender');
+    });
+
 
 });
 
@@ -97,4 +101,4 @@ Route::get('/detail/{id}', [\App\Http\Controllers\ActivityController::class, 'de
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');

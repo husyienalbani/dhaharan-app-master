@@ -14,7 +14,7 @@
                 <img src="{{ asset('/assets/admin/images/logo-icon.png') }}" alt="logo icon" />
             </div>
             <div class="card-title text-uppercase text-center py-3">
-                TAMBAH KEGIATAN
+                ADD ACTIVITY
             </div>
             <div class="modal-body">
                 <div class="col-md-12">
@@ -26,8 +26,8 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="ActivityName" class="form-label"><b>Nama
-                                                        Kegiatan</b></label>
+                                                <label for="ActivityName" class="form-label"><b>Activity
+                                                        Name</b></label>
                                                 <input type="text"
                                                     class="form-control @error('name') is-invalid @enderror" name="name"
                                                     value="{{ old('name') }}" placeholder="Masukan Nama Kegiatan"
@@ -42,12 +42,12 @@
                                         </div>
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="ActivityCategory" class="form-label"><b>Kategori
-                                                        Kegiatan</b></label>
+                                                <label for="ActivityCategory" class="form-label"><b>Activity
+                                                        Category</b></label>
                                                 <select class="form-control @error('category_id') is-invalid @enderror"
                                                     name="category_id" style="font-size: small">
-                                                    <option value="" selected disabled style="font-size: small">Pilih
-                                                        Kategori Kegiatan</option>
+                                                    <option value="" selected disabled style="font-size: small">Choose
+                                                        Activity Category</option>
                                                     @foreach ($categories as $category)
                                                     <option value="{{$category->id}}">{{$category->name}}</option>
                                                     @endforeach
@@ -69,8 +69,8 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="ActivityDate" class="form-label"><b>Tanggal
-                                                        Kegiatan</b></label>
+                                                <label for="ActivityDate" class="form-label"><b>Activity
+                                                        Date</b></label>
                                                 <input type="date"
                                                     class="form-control @error('Activity_date') is-invalid @enderror"
                                                     name="date" value="{{ old('date') }}"
@@ -84,8 +84,8 @@
                                         </div>
                                         <div class="col-md-6 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="ActivityAddress" class="form-label"><b>Alamat
-                                                        Kegiatan</b></label>
+                                                <label for="ActivityAddress" class="form-label"><b>Activity
+                                                        Address</b></label>
                                                 <input type="text"
                                                     class="form-control @error('Activity_nominal') is-invalid @enderror"
                                                     name="address" value="{{ old('address') }}"
@@ -107,8 +107,8 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="ActivityCost" class="form-label"><b>Pengeluaran
-                                                        Kegiatan</b></label>
+                                                <label for="ActivityCost" class="form-label"><b>Activity
+                                                        Cost</b></label>
                                                 <input type="float"
                                                     class="form-control @error('cost') is-invalid @enderror" name="cost"
                                                     value="{{ old('cost') }}"
@@ -131,8 +131,8 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="ActivityDescription" class="form-label"><b>Deskripsi
-                                                        Kegiatan</b></label>
+                                                <label for="ActivityDescription"
+                                                    class="form-label"><b>Description</b></label>
                                                 <textarea
                                                     class="form-control @error('description') is-invalid @enderror"
                                                     name="activityinfo" rows="5" placeholder="activityinfo"></textarea>
@@ -153,7 +153,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="formFile" class="form-label"><b>Gambar Cover</b></label>
+                                                <label for="formFile" class="form-label"><b>Cover Image</b></label>
                                                 <input class="form-control @error('cover') is-invalid @enderror"
                                                     name="cover" type="file" style="font-size: small" />
                                                 @error('cover')
@@ -167,7 +167,7 @@
                                     <div class="row">
                                         <div class="col-md-12 col-12" style="margin-bottom: 5px">
                                             <div class="mb-3">
-                                                <label for="formFile" class="form-label"><b>Gambar Kegiatan</b></label>
+                                                <label for="formFile" class="form-label"><b>Activity Image</b></label>
                                                 <input
                                                     class="form-control @error('activity_images') is-invalid @enderror"
                                                     name="activity_images[]" multiple type="file"
